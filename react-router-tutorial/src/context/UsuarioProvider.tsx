@@ -2,14 +2,11 @@ import { useState } from "react";
 import { usuarioType } from "../types/usuarioType";
 import { UsuarioContext } from "./UsuarioContext";
 
-const usuarioValue: usuarioType = {
-	nombre: "Pob",
-	tecnologia: "React",
-	email: "jeduardoa2003@gmail.com",
-	redes: "@Pob",
-};
-
-export const UsuarioProvider = ({ children }: { children: JSX.Element[] }) => {
+export const UsuarioProvider = ({
+	children,
+}: {
+	children: JSX.Element | JSX.Element[];
+}) => {
 	/* Array porque pueden ser multiples elementos en el children */
 
 	const [usuario, setUsuario] = useState<usuarioType>(null);
