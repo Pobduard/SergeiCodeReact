@@ -1,0 +1,13 @@
+body, html{
+	background-color: black;
+	color: aliceblue;
+	padding: 1% 2%;
+}
+
+.verde{
+	color: green;
+}
+
+.rojo{
+	color: red;
+}
